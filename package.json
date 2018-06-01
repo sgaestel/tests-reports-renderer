@@ -1,0 +1,12 @@
+{
+  "name": "test-reports-renderer",
+  "version": "0.1.0",
+  "private": true,
+  "main": "testReportsParser.js",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "bin": {
+    "test-reports-renderer": "testReportsParser.bin.js"
+  }
+}
