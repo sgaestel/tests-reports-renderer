@@ -8,5 +8,39 @@
   },
   "bin": {
     "test-reports-renderer": "testReportsParser.bin.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "prettier": "^1.13.4"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true,
+      "jasmine": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "experimentalObjectRestSpread": true,
+        "jsx": true
+      },
+      "sourceType": "module",
+      "ecmaVersion": 8
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "linebreak-style": [
+        "error",
+        "unix"
+      ]
+    }
   }
 }

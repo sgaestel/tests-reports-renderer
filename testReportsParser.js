@@ -4,13 +4,6 @@ const parsers = require('./parsers');
 
 const projectPath = process.cwd();
 
-const pathResolver = path => {
-  if (_.startsWith(path, '.')) {
-    return `${projectPath}/${path}`;
-  }
-  return path;
-};
-
 module.exports = {
   run: () => {
     const outputPath = `${projectPath}/test-reports-renderer-output`;
